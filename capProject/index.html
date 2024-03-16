@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product detail</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <main class="products">
+        <div class="cart-container hidden">
+          <div class="cart-container--1">
+            <button class="cancel"></button><span class="text-red">cancel</span>
+                <div class="cart-detail cart-detail--1"><span class="quantity-incart"></span> item in cart</div>
+                <div class="cart-detail cart-detail--2">subtotal <span class="subtotal-incart"></span></div>
+
+          </div>
+          <div class="cart-container--2">
+            <a href="cart.html" class="btn-cart btn-cart--viewcart">view/edit cart</a>
+            <a href="#" class="btn-cart btn-cart--checkout">checkout now</a>
+          </div>
+        </div>
+
+        
+        <div class="product-detail">                       
+                <div class="slide">
+                    <div class="slide-img">
+                        
+                    </div>
+        
+                  <button class="slider__btn slider__btn--left">&larr;</button>
+                  <button class="slider__btn slider__btn--right">&rarr;</button>
+                  <div class="dots"></div>
+                </div>
+           
+
+            <div class="product-detail--sup">
+                <div class="product-detail-sub product-detail-sub--1">
+                    <h3 class="product-heading"> brand name </h3>
+                    <p class="product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum in ut nesciunt libero alias totam est fuga commod.
+                    </p>
+                </div>
+                <div class="product-detail-sub product-detail-sub--2">
+                   <span class="product-detail--price"></span><span>&#8361;</span>
+                </div>
+                <div class="product-detail--select">
+                    <span class="label label-size"> size </span>
+                    <select class="product-size">
+                        <option value="0" class="size-s">small</option>
+                        <option value="1" class="size-m">medium</option>
+                        <option value="2" class="size-l">large</option>
+                    </select>
+    
+                    <div class="product-quantity">
+                        <span class="label label-quantity"> quantity </span>
+                        <button class="btn product-quantity-minus">-</button>
+                         <span class="small-label quantity">1</span>
+                        <button class="btn product-quantity-plus">+</button>
+                    </div>
+                </div>
+                <div class="product-incart hidden">
+                    <span>&#10004;in cart</span>
+                    <!-- <button class="cancel"></button><span class="text-red">cancel</span> -->
+                </div>
+    
+                <div class="btns-product">
+                    <button class="btn-product btn-add">add to cart</button>                  
+                    <a href="#" class="btn-product btn-shopping">keep shopping</a>                  
+                </div>
+            </div>
+             
+            </div>
+        </div>
+        
+        
+        <div class="purchase-info-contatiner">
+        <div class="btns-container">
+            <button class="btn-purchase-info" data-content="1">shipping</button>
+            <button class="btn-purchase-info" data-content="2">exchange/refund</button>
+            <button class="btn-purchase-info" data-content="3">size</button>
+
+        </div>
+        <div class="purchase-info">
+            <div class="purchase-content purchase-content--1">
+                <h4 class="purchase-heading">배송안내</h4>
+                <p class="purchase-text"> 
+                    CJ대한통운 또는 한진택배를 이용합니다. <br>
+                    배송비 : 무료배송 <br>
+                    배송 기간 : 2일 ~ 5일 (택배사 사정에 따라 배송이 지연될 수 있습니다.) <br>
+                    오후 2시 이전 주문 건은 당일 발송 처리되며, 오전 10시 오후 2시 하루 두 번 출고가 진행되므로, <br>
+                    해당 시간 이전 주문 건들은 출고 시간이 지난 경우 주문 취소가 불가하여 수령 후 반품 접수 해주시기 바랍니다. <br>
+                    (ex. 10시 이전 주문 건 10시 이후 취소 불가, 10시~2시 사이 주문 건 2시 이후 취소 불가)    <br>               
+                </p>
+            </div>  
+            <div class="purchase-content purchase-content--2">
+                <h4 class="purchase-heading">환불/교환정책</h4>
+                <p class="purchase-text">
+                    교환은 반품 후 재주문을 통해 가능합니다. <br>
+                    상품 수령 후 7일 이내 마이페이지 주문내역에서 반품 접수해주세요. <br>
+                    색상 및 사이즈 오차 등 단순변심에 의한 반품은 고객님께 배송비가 부과됩니다. <br>
+                    고객님의 부주의로 인한 스크래치, 손상, 구김, 이염 등은 교환, 반품 사유에 해당하지 않습니다. <br>
+                    제품을 보내실 때는 수령한 상태 그대로 재포장 되어야 하며, 동봉되어 있던 반품 신청서를 작성하여 발송해 주셔야 빠르게 검수가 가능합니다. <br>
+                    (반품시 보내드린 사은품이 동봉하지 않을 경우, 환불이 불가하며 상품이 반송되어 추가 배송비가 발생합니다.) <br>
+                    제품 공정 과정 중 발생할 수 있는 바느질 정리 부분 / 초크 자국 / 패턴 불규칙 등은 불량으로 간주되지 않습니다. <br>
+                    반품의 경우 사이트 내 사전 접수 없이 일방적으로 반품처로 보내진 경우 상품은 고객님께 반송 처리됩니다. <br>
+                    현관 앞 분실의 경우 당사 또는 택배사에서 책임지지 않습니다. <br>
+                    </p>
+                    <h4 class="purchase-heading">  반품이 불가한 경우</h4>   
+                    <p  class="purchase-text">             
+                    반품 시기를 경과하여 재판매가 어려운 경우 (상품 수령후 영업일 기준 7일 이내 반품을 접수하셔야합니다.) <br>
+                    고객님에 의한 상품, 라벨, 택 등이 멸실, 훼손 또는 오염되었을 경우 <br>
+                    고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 감소한 경우 <br>
+                    상품들 특성을 고려해 시착에서 발생하는 훼손된 상품인 경우는 상품의 교환/반품이 불가하며, 입은 흔적이나 이염이나 훼손된 상태로 반송된 경우 재반송 됩니다. <br>
+                    시착 과정에서 바디 화장품들에 의해 입은 흔적으로 자국및 오일이 묻어나는 경우 <br>
+                    시착 과정에서 피부 각질이 허옇게 줄무늬로 발생되어 상품이 반송된 경우 <br>
+                    시착 과정에서 사이즈가 맞지 않아 바느질이 튿어져 반송된 경우 <br>
+                    시착 과정에서 바디 제품 및 향수의 향이 베어져 반송된 경우 <br>
+                    시착 과정에서 알콜성 액체와 닿아 물빠짐 또는 이염이 발생되는 경우 <br>
+                    발송된 상품 그대로 재포장 되어진 상태가 아닌, 구겨짐이 심하고 포장이 훼손된 상태로 반송된 경우 세탁한 흔적이 있고, 새상품 그대로가 아닌 착용후 반송된 경우 <br>
+                    반품이 불가능함을 따로 명시한 경우 <br>
+                    기타 ‘전자상거래 등에서의 소비자 보호에 관한 법률’이 정하는 청약철회 제한 사유에 해당하는 경우 <br>
+                </p>
+            </div>  
+            <div class="purchase-content purchase-content--3">
+                <h4 class="purchase-heading">size detail</h4>
+                <p class="purchase-text">
+                   <span class="size-s">s</span>53-55 cm
+                   <span class="size-m">m</span>56-58 cm
+                   <span class="size-l">l</span>59-61 cm
+                </p>
+            </div>
+        </div> 
+    </div>
+    </main>
+
+
+
+    <!-- <main class="main-cart hidden">
+        <table>
+            <tr class="cart-row--1">
+                <th class="cart-title"> edit/view cart </th>
+            </tr>
+            <tr>
+                <td> <img src="https://picsum.photos/100/100?"  alt="small-product-image" class="product-img"></td>
+                <td> 
+                    <div class="order-descriptions">
+                        <span class="small-label">brand :</span><span class="p-brand"></span> <br>
+                        <span class="small-label">style :</span><span class="p-style"></span><br>
+                        <span class="small-label">size :</span><span class="p-size"> </p><br>
+                        <span class="small-label">quantity :</span><span class="p-quantity"> </span><br>
+                    </div>
+                </td>
+                <td>                             
+                        <button class="cart-remove">remove</button>
+                        <td>
+                            <span class="price-each"></span>
+                        </td>                              
+                </td>
+            </tr>
+            <tr>
+                <td><span class="totalspan">subtotal</span></td>
+                <td colspan="3">
+                    <div class="cart-bottom">
+                        <a href="#" class="cart-keepshopping">keep shopping</a>
+                        <a href="#" class="cart-checkout">checkout now</a>
+                    </div>
+                </td>
+            </tr>
+        </table>    
+    </main> -->
+    <script src="script.js"></script>
+</body>
+</html>
+
