@@ -1,3 +1,5 @@
+
+
 'use strict'
 // html div
 const cart = document.querySelector(".cart-container");
@@ -42,7 +44,7 @@ let cartItems = JSON.parse(localStorage.getItem("items")) || [];
 let quan = +quantitySelect.textContent;
 document.querySelector(".product-detail--price").textContent = products[currentProduct].price;
 document.querySelector(".product-heading").textContent =products[currentProduct].brand;
-
+//document.querySelector(".product-text").textContent= products[currentProduct].description;
 
 //Slider
 
@@ -202,3 +204,7 @@ btnContainer.addEventListener('click', function(e){
         document.querySelector(`.purchase-content--${clicked.dataset.content}`).classList.add("content-active");
       }
   });
+
+
+
+

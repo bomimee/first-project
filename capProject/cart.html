@@ -5,8 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="cart.js"></script>
+    <script src="https://kit.fontawesome.com/80123590ac.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header id="header">
+		<div class="wrapper">
+			<p class="title">
+				<a href="">I.C.T</a>
+			</p>
+			<ul class="category">
+				<li><a class="category-list" href="">Ballcap</a></li>
+				<li><a class="category-list" href="">Buckethat</a></li>
+				<li><a class="category-list" href="">Beanie</a></li>
+				<li><a class="category-list" href="">Suncap</a></li>
+			</ul>
+			<a href="#" class="hamburger">
+				<i class="fa-solid fa-bars"></i>
+			</a>
+			<form class="item2" onsubmit="return false">
+				<input type="text" class="searchbar2" type="text" placeholder="&nbsp;&nbsp;검 색">
+				<button class="res2">&nbsp;검색</button>
+			</form>
+			<form class="item" onsubmit="return false">
+				<input type="text" class="searchbar1" type="text" placeholder="&nbsp;&nbsp;검 색">
+				<button class="res1">&nbsp;검색</button>
+				<a href="" class="b1 a1"><i class="fa-solid fa-magnifying-glass"></i></a>
+				<a href="" class="b2 a1"><i class="fa-brands fa-opencart"></i></a>
+<!-- 				<i class="fa-solid fa-cart-shopping"></i> -->
+				<a href="" class="b3 a1"><i class="fa-regular fa-user"></i></a>
+			</form>	
+		</div>	
+	</header>
+
     <main class="main-cart">
       
             <div class="heading grid-row--1">
@@ -15,7 +46,11 @@
            
             <div class="cart-state grid-row--2">
   
-              
+			</div>
+
+			<div class="items-total grid-row--3">
+			<span class="small-label">subtotal</span>&#8361;<span class="subtotal"></span>    
+			</div> 
             <div class="cart-bottom grid-row--4">
                 <a href="#" class="cart-keepshopping">keep shopping</a>
                 <a href="#" class="cart-checkout">checkout now</a>
@@ -23,6 +58,6 @@
        
     
     </main>
-    <script src="cart.js"></script>
+    
 </body>
 </html>

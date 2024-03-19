@@ -5,8 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product detail</title>
 </head>
+<script src="https://kit.fontawesome.com/80123590ac.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
 <body>
+    <header id="header">
+		<div class="wrapper">
+			<p class="title">
+				<a href="">I.C.T</a>
+			</p>
+			<ul class="category">
+				<li><a class="category-list" href="">Ballcap</a></li>
+				<li><a class="category-list" href="">Buckethat</a></li>
+				<li><a class="category-list" href="">Beanie</a></li>
+				<li><a class="category-list" href="">Suncap</a></li>
+			</ul>
+			<a href="#" class="hamburger">
+				<i class="fa-solid fa-bars"></i>
+			</a>
+			<form class="item2" onsubmit="return false">
+				<input type="text" class="searchbar2" type="text" placeholder="&nbsp;&nbsp;검 색">
+				<button class="res2">&nbsp;검색</button>
+			</form>
+			<form class="item" onsubmit="return false">
+				<input type="text" class="searchbar1" type="text" placeholder="&nbsp;&nbsp;검 색">
+				<button class="res1">&nbsp;검색</button>
+				<a href="" class="b1 a1"><i class="fa-solid fa-magnifying-glass"></i></a>
+				<a href="" class="b2 a1"><i class="fa-brands fa-opencart"></i></a>
+<!-- 				<i class="fa-solid fa-cart-shopping"></i> -->
+				<a href="" class="b3 a1"><i class="fa-regular fa-user"></i></a>
+			</form>	
+		</div>	
+	</header>
+	
+
     <main class="products">
         <div class="cart-container hidden">
           <div class="cart-container--1">
@@ -132,43 +164,6 @@
         </div> 
     </div>
     </main>
-
-
-
-    <!-- <main class="main-cart hidden">
-        <table>
-            <tr class="cart-row--1">
-                <th class="cart-title"> edit/view cart </th>
-            </tr>
-            <tr>
-                <td> <img src="https://picsum.photos/100/100?"  alt="small-product-image" class="product-img"></td>
-                <td> 
-                    <div class="order-descriptions">
-                        <span class="small-label">brand :</span><span class="p-brand"></span> <br>
-                        <span class="small-label">style :</span><span class="p-style"></span><br>
-                        <span class="small-label">size :</span><span class="p-size"> </p><br>
-                        <span class="small-label">quantity :</span><span class="p-quantity"> </span><br>
-                    </div>
-                </td>
-                <td>                             
-                        <button class="cart-remove">remove</button>
-                        <td>
-                            <span class="price-each"></span>
-                        </td>                              
-                </td>
-            </tr>
-            <tr>
-                <td><span class="totalspan">subtotal</span></td>
-                <td colspan="3">
-                    <div class="cart-bottom">
-                        <a href="#" class="cart-keepshopping">keep shopping</a>
-                        <a href="#" class="cart-checkout">checkout now</a>
-                    </div>
-                </td>
-            </tr>
-        </table>    
-    </main> -->
-    <script src="script.js"></script>
 </body>
 </html>
 
