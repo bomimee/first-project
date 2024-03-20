@@ -35,8 +35,7 @@ let curImg=0;
 let currentProduct = 0;
 const pImgs = products[currentProduct].img;
 const maxSlide = pImgs.length;
-let cartItems;
-
+let cartItems = JSON.parse(localStorage.getItem("items")) || [];
 
 //Text content value change
 
@@ -45,8 +44,8 @@ document.querySelector(".product-detail--price").textContent = products[currentP
 document.querySelector(".product-heading").textContent =products[currentProduct].brand;
 //document.querySelector(".product-text").textContent= products[currentProduct].description;
 
-
 //Slider
+
 const slider = function(){ 
     const createImgs = function(img){
         slideImgContainer.innerHTML = "";
@@ -131,27 +130,20 @@ const quantityPlus = function(){
     quantitySelect.textContent = quan;    
 }
 
-const handlingExistingItems = function(){
-    cartItems = JSON.parse(localStorage.getItem("items"))
-    const foundItem = cartItems.find(item=> item.id === products[currentProduct].id);
-    if (foundItem) {
-        const quantity = foundItem.size.reduce((s, n) => s + n, 0);
-        quantityIncart.textContent = quantity;
-        subtotal.textContent = quantity * foundItem.price; 
-         cart.classList.remove("hidden");
-    }
-    else  cart.classList.add("hidden");
-}
-        
-
 const handlingShowCart = function(){
    
-    handlingExistingItems();
+    const foundItem = cartItems.find(item=> item.id === products[currentProduct].id)
 
-        inCart.classList.remove("hidden");
-        removeItem.classList.remove("hidden");
-        cart.classList.remove("hidden");
-    
+    if(foundItem){
+        const quantity = foundItem.size.reduce((s, n) => s + n, 0);
+        quantityIncart.textContent = quantity;
+        subtotal.textContent = quantity * foundItem.price;
+    }
+
+   // quantityIncart.textContent = quan;
+    inCart.classList.remove("hidden");
+    removeItem.classList.remove("hidden");
+    cart.classList.remove("hidden");
 }
 
 const initializeCart = function(){
@@ -165,12 +157,13 @@ const handlingRemoveItem = function(){
         localStorage.removeItem("items");
         subtotal.textContent = "0";
         quantityIncart.textContent="0";
+console.log(currentProduct);
 
+  
     initializeCart();
 }
 
 const handlingAddCart = function(){ 
-    cartItems = JSON.parse(localStorage.getItem("items")) || [];
     const id = products[currentProduct].id;
     const sq = +quantitySelect.textContent;
     const sz = +sizeSelect.value;
@@ -201,8 +194,7 @@ btnMinus.addEventListener("click", quantityMinus);
 btnPlus.addEventListener("click", quantityPlus);
 removeItem.addEventListener("click",handlingRemoveItem);
 textCancel.addEventListener("click", handlingRemoveItem);
-localStorage.length > 0 && handlingExistingItems();
-
+localStorage.length>0 && handlingShowCart();
 slider();
 
 btnContainer.addEventListener('click', function(e){
