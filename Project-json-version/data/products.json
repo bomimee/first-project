@@ -1,0 +1,28 @@
+{
+"products":[
+{
+"id":1,
+"brand":"Supreme",
+"price":50000,
+"img": ["supreme1", "supreme2" ],
+"style":"black",
+"description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum in ut nesciunt libero alias totam est fuga commod."
+},
+{
+"id":2,
+"brand":"MLB",
+"price":38000,
+"img": ["mlb1", "mlb2","mlb3" ],
+"style":"white",
+"description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum in ut nesciunt libero alias totam est fuga commod."
+},
+{
+"id":3,
+"brand":"ICT",
+"price":78000,
+"img": ["ny1", "ny2","ny3" ],
+"style":"black",
+"description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum in ut nesciunt libero alias totam est fuga commod."
+}
+]
+}
